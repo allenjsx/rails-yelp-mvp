@@ -1,0 +1,14 @@
+<%= simple_form_for(@restaurant) do |form| %>
+<%= form.error_notification %>
+<div class="form-inputs">
+<%= form.input :name %>
+<%= form.input :address %>
+<%= form.input :phone_number %>
+<%= form.input :category, collection: Restaurant::CATEGORIES%>
+</div>
+
+<div class="form-actions">
+  <%= form.button :submit, class: "btn-default" %>
+</div>
+<% end %>
+

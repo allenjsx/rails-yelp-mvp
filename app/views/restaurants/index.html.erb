@@ -1,0 +1,15 @@
+
+<div class="container">
+<h1 class="text-center">Yelp - List of Restaurants</h1>
+<br>
+<br>
+<% @restaurants.each do |restaurant| %>
+<div class="restaurant text-center">
+<h2> <%= link_to "#{restaurant.name}", restaurant_path(restaurant.id) %> </h2>
+<p> Phone Number: <%= restaurant.phone_number %> </p>
+<p> Address: <%= restaurant.address %> </p>
+<p> Category: <%= restaurant.category %> </p>
+<% end%>
+</div>
+<%= link_to "Add a restaurant", new_restaurant_path, class: "btn btn-danger"%>
+</div>

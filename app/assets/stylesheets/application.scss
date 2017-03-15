@@ -1,0 +1,54 @@
+// Graphical variables
+@import "config/variables";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "vendor/index";
+
+// Your CSS
+@import "layout/index";
+@import "components/index";
+@import "pages/index";
+
+body {
+  background-color: #3079AB;
+}
+
+// .container {
+//   background: #D9DAD6;
+//   border-radius: 2px
+//   text-align: center;
+//   margin: 50px;
+//   position: absolute;
+//   background-color: #D9DAD6;
+//   color: #333333;
+// }
+
+//   // width: 500px;
+
+
+.container{
+  background: #F6F6F6;
+  border-radius: 2px;
+  text-align: center;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  width:30em;
+  height:auto;
+  margin-top: -9em; /*set to a negative number 1/2 of your height*/
+  margin-left: -15em; /*set to a negative number 1/2 of your width*/
+  margin-bottom: 9em;
+  padding: 15px;
+  font-family: Helvetica;
+  border: 1px solid rgba(155, 155, 155, 0.5);
+  box-shadow: 1px 1px 1px rgba(217, 164, 164, 0.2);
+}
+
+.review {
+  text-align: left;
+}
